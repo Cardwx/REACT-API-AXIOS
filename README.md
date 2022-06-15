@@ -21,3 +21,15 @@ Dentro do vetor gerado pela API, são selecionados 10 filmes de determinada fran
 
 Dentro da função GET da API não foi selecionada nenhuma opção de busca, pois como a base da url já constava o link completo da consulta da API não será necessário realizar a solicitação de um elemento especifico pelo GET
 ![get](https://user-images.githubusercontent.com/68347193/173836937-bd543c1d-9047-4b56-9b50-2424cec6114d.PNG)
+
+## Veja nesse exemplo
+
+Aonde eu retiro a informação final da API https://api.tvmaze.com/search/shows?q= e implementei a opção do star wars através do GET para realizar a requisição, o resultado permanece o mesmo do vídeo acima
+
+
+##Arquivo API 
+![2](https://user-images.githubusercontent.com/68347193/173842453-b53b7421-3a6e-44d8-abc1-1bc214dba10a.PNG)
+
+##Metodo GET
+
+![1](https://user-images.githubusercontent.com/68347193/173842497-6706726b-255e-4fa1-80c9-d0050b763fd3.PNG)
