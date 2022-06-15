@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+## Projeto realizando o consumo de dados de uma API com ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido a partir de cursos de youtube
 
-## Available Scripts
 
-In the project directory, you can run:
+# API utilizada como base para o projeto:
 
-### `npm start`
+https://api.tvmaze.com/search/shows?q=star%20war (copie e cole no navegador) 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![2022-06-15-09-53-41](https://user-images.githubusercontent.com/68347193/173832302-130076b0-a930-4f1f-b967-c553ed40b9ff.gif)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ao realizar a autenticação via Async Await para a API da Tvmaze, dentre das diversas opções prescritas dentro da API eu selecionei apenas o título e o nome do filme para serem apresentadas aos usuários, como no vídeo acima. 
 
-### `npm run build`
+Dentro do vetor gerado pela API, são selecionados 10 filmes de determinada franquia para serem apresentados, sendo definidos através do arquivo API.JS aonde é criado a base do AXIOS e definido a baseurl com o link para realizar a busca:  
+![axios](https://user-images.githubusercontent.com/68347193/173834260-6407d125-f574-4abc-a28e-707431aa7d8c.PNG)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Lembrando que
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Dentro da função GET da API não foi selecionada nenhuma opção de busca, pois como a base da url já constava o link completo da consulta da API não será necessário realizar a solicitação de um elemento especifico pelo GET
+![get](https://user-images.githubusercontent.com/68347193/173836937-bd543c1d-9047-4b56-9b50-2424cec6114d.PNG)
