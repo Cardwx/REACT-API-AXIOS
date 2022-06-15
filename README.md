@@ -16,7 +16,7 @@ Ao realizar a autenticação via Async Await para a API da Tvmaze, dentre das di
 Dentro do vetor gerado pela API, são selecionados 10 filmes de determinada franquia para serem apresentados, sendo definidos através do arquivo API.JS aonde é criado a base do AXIOS e definido a baseurl com o link para realizar a busca:  
 ![axios](https://user-images.githubusercontent.com/68347193/173834260-6407d125-f574-4abc-a28e-707431aa7d8c.PNG)
 
-## Lembrando que
+## Lembrando que:
 
 
 Dentro da função GET da API não foi selecionada nenhuma opção de busca, pois como a base da url já constava o link completo da consulta da API não será necessário realizar a solicitação de um elemento especifico pelo GET
@@ -27,9 +27,13 @@ Dentro da função GET da API não foi selecionada nenhuma opção de busca, poi
 Aonde eu retiro a informação final da API https://api.tvmaze.com/search/shows?q= e implementei a opção do star wars através do GET para realizar a requisição, o resultado permanece o mesmo do vídeo acima
 
 
-##Arquivo API 
+## Arquivo API 
 ![2](https://user-images.githubusercontent.com/68347193/173842453-b53b7421-3a6e-44d8-abc1-1bc214dba10a.PNG)
 
-##Metodo GET
+## Metodo GET
 
 ![1](https://user-images.githubusercontent.com/68347193/173842497-6706726b-255e-4fa1-80c9-d0050b763fd3.PNG)
+
+## Sugestão de melhoria para aplicação:
+
+Implementar a busca de série preferida do usuário através de um input pré setado com a opção de outras séries e filmes, importando os dados gerados a um arquivo csv através do google planilhas 
